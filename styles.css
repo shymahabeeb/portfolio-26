@@ -14,7 +14,7 @@
   --accent-dot: #B45309;
   --cta-bg: #451A03;
   --cta-text: #FFFFFF;
-  --cta-border: #FDE68A;
+  --cta-border: transparent;
   --focus: #B45309;
   --section-gap: clamp(64px, 9vw, 112px);
   --gutter: clamp(20px, 5vw, 48px);
