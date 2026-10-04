@@ -14,7 +14,7 @@
   --accent-dot: #B45309;
   --cta-bg: #451A03;
   --cta-text: #FFFFFF;
-  --cta-border: #FDE68A;
+  --cta-border: transparent;
   --nav-border: rgba(255, 255, 255, 0.15);
   --focus: #B45309;
   --toggle-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z'/%3E%3C/svg%3E");
