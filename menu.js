@@ -16,7 +16,7 @@
 
   document.addEventListener('click', function (event) {
     if (!nav.classList.contains('is-open')) { return; }
-    if (nav.contains(event.target) || button.contains(event.target)) { return; }
+    if (nav.contains(event.target) || button.contains(event.target) || event.target.closest('.theme-toggle')) { return; }
     setOpen(false, false);
   });
 
