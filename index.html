@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js"></script>
+  <script src="menu.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -17,16 +18,21 @@
   <header class="site-header">
     <div class="wrap">
       <a class="logo" href="index.html">SHYMA HABEEB <span>| PORTFOLIO</span></a>
-      <nav class="nav" aria-label="Main">
-        <a href="work.html">WORK</a>
-        <a href="experience.html">EXPERIENCE</a>
-        <a href="about.html">ABOUT</a>
-        <a href="contact.html">CONTACT</a>
-      </nav>
+      <div class="header-right">
+        <nav class="nav" id="site-nav" aria-label="Main">
+          <a href="work.html">WORK</a>
+          <a href="experience.html">EXPERIENCE</a>
+          <a href="about.html">ABOUT</a>
+          <a href="contact.html">CONTACT</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">&#9680;</button>
+        <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+        </button>
+      </div>
     </div>
   </header>
-
-  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">&#9680;</button>
 
   <main id="main">
     <section class="wrap hero" aria-labelledby="hero-title">
@@ -76,32 +82,32 @@
     <section class="wrap" id="case-studies" aria-labelledby="cases-title">
       <h2 id="cases-title">Featured case studies</h2>
       <div class="grid grid-2">
-        <a class="card" href="work.html">
-          <div class="card-media">[Add cover image]</div>
+        <a class="card" href="work.html?filter=product-design">
+          <div class="card-media card-media-image"><img src="cover-product-design.jpg" alt="Cover image for the Product Design &amp; Systems case study" width="1600" height="900" loading="lazy"></div>
           <div class="card-body">
             <h3>Product Design &amp; Systems</h3>
-            <p class="placeholder">[Add one line description]</p>
+            <p class="card-desc">Signup flow improvements, web platform dashboards, mobile website and mobile guided tour designs.</p>
           </div>
         </a>
-        <a class="card" href="work.html">
-          <div class="card-media">[Add cover image]</div>
+        <a class="card" href="work.html?filter=ai-workflow-automation">
+          <div class="card-media card-media-image"><img src="cover-ai-workflow-automation.jpg" alt="Cover image for the AI Workflow Automation case study" width="1600" height="900" loading="lazy"></div>
           <div class="card-body">
-            <h3>Automated Client Reporting</h3>
-            <p class="placeholder">[Add one line description]</p>
+            <h3>AI Workflow Automation</h3>
+            <p class="card-desc">Automated ad reports, content drafting and audit agents, and client workflow playbooks.</p>
           </div>
         </a>
-        <a class="card" href="work.html">
-          <div class="card-media">[Add cover image]</div>
+        <a class="card" href="work.html?filter=astro-web-builds">
+          <div class="card-media card-media-image"><img src="cover-astro-web.jpg" alt="Cover image for the Astro Web Engineering case study" width="1600" height="900" loading="lazy"></div>
           <div class="card-body">
             <h3>Astro Web Engineering</h3>
-            <p class="placeholder">[Add one line description]</p>
+            <p class="card-desc">Client websites built with Astro, updated by prompts and deployed through GitHub.</p>
           </div>
         </a>
-        <a class="card" href="work.html">
-          <div class="card-media">[Add cover image]</div>
+        <a class="card" href="work.html?filter=knowledge-base">
+          <div class="card-media card-media-image"><img src="cover-knowledge-base.jpg" alt="Cover image for the Knowledge Base Architecture case study" width="1600" height="900" loading="lazy"></div>
           <div class="card-body">
             <h3>Knowledge Base Architecture</h3>
-            <p class="placeholder">[Add one line description]</p>
+            <p class="card-desc">Help articles, release posts, feature blogs and product quizzes for internal teams.</p>
           </div>
         </a>
       </div>
